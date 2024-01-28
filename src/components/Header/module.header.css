@@ -1,0 +1,83 @@
+:root {
+  --primaryColor: #ff793d;
+  --backgroundColor: #f6f4ee;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.brandContainer {
+  width: 150px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navLinksContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks > li {
+  list-style-type: none;
+}
+
+.burger {
+  display: none;
+}
+
+.closeButton {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 962px) {
+  .brandContainer {
+    width: 100px;
+  }
+  .navLinksContainer {
+    position: absolute;
+    background: var(--backgroundColor);
+    width: 100%;
+    left: -1000px;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    padding: 0 60px;
+    transition: 0.3s all;
+  }
+
+  .showNav {
+    left: 0;
+    opacity: 1;
+    transition: 0.3s all;
+  }
+
+  .navLinks {
+    flex-direction: column;
+  }
+
+  .navLinks > li {
+    font-size: 30px;
+    text-align: end;
+  }
+  .burger {
+    display: block;
+  }
+  .closeButton {
+    display: block;
+  }
+}
