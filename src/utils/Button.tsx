@@ -23,12 +23,13 @@ export default function Button({
     <button
       style={{
         border: border ? border : "none",
-        padding: padding ? padding : "10px 25px",
+        padding: padding ? padding : "15px 30px",
         backgroundColor: backgroundColor ? backgroundColor : theme.primaryColor,
         borderRadius: borderRadius ? borderRadius : 10,
         color: color ? color : theme.light,
         fontWeight: fontWeight ? fontWeight : 600,
         cursor: "pointer",
+        fontSize: "16px",
       }}
     >
       {title ? title : "Button"}

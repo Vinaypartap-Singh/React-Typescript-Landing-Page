@@ -58,6 +58,7 @@
     align-items: end;
     padding: 0 60px;
     transition: 0.3s all;
+    z-index: 99;
   }
 
   .showNav {

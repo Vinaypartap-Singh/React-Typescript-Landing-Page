@@ -1,0 +1,32 @@
+.mainContainerOffer {
+  margin: 120px 0;
+}
+
+.imageContainer {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.imgHolder {
+  width: 48%;
+}
+
+.offerImage {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .imageContainer {
+    justify-content: center;
+  }
+  .imgHolder {
+    width: 80%;
+  }
+  .offerImage {
+    border-radius: 10px;
+  }
+}

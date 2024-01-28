@@ -1,6 +1,7 @@
 import AnnouncementBar from "./components/Bar/AnnoucementBar";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
+import HomePage from "./pages/HomePage";
 import FacebookIcon from "./utils/FacebookIcon";
 import Instagram from "./utils/Instagram";
 import { theme } from "./utils/theme";
@@ -28,7 +29,7 @@ export default function App() {
         socialIcon={socialIcon}
       />
       <Header fontWeight={500} />
-      <HeroSection />
+      <HomePage />
     </div>
   );
 }
