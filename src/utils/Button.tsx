@@ -8,6 +8,7 @@ type buttonProps = {
   color?: string;
   borderRadius?: number;
   fontWeight: number | string;
+  zIndex?: number;
 };
 
 export default function Button({
@@ -18,6 +19,7 @@ export default function Button({
   color,
   borderRadius,
   fontWeight,
+  zIndex,
 }: buttonProps) {
   return (
     <button
@@ -30,6 +32,7 @@ export default function Button({
         fontWeight: fontWeight ? fontWeight : 600,
         cursor: "pointer",
         fontSize: "16px",
+        zIndex: zIndex ? zIndex : 10,
       }}
     >
       {title ? title : "Button"}

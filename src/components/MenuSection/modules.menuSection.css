@@ -1,0 +1,78 @@
+.main_ms_container {
+  display: flex;
+}
+
+.ms_heading {
+  font-size: 45px;
+  z-index: 10;
+}
+
+.bg_content {
+  position: relative;
+  background-image: url("https://shawarmawest.ca/wp-content/uploads/2023/11/Untitled-design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 180px 0;
+  gap: 10px;
+}
+
+.bg_content > h3 {
+  font-weight: 300;
+  z-index: 10;
+}
+
+.bg_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.335);
+
+  width: 100%;
+  height: 100%;
+}
+
+.ms_content {
+  width: 50%;
+  padding: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.menulist {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.ms_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ms_card > h4 {
+  font-size: 24px;
+  border-bottom: 1px dashed grey;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .main_ms_container {
+    flex-direction: column;
+  }
+  .bg_content {
+    width: 100%;
+  }
+  .ms_content {
+    padding: 40px;
+    width: 100%;
+  }
+}
