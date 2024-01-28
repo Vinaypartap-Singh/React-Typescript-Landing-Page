@@ -1,0 +1,18 @@
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contactInfo > h6 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
